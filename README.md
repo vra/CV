@@ -15,7 +15,7 @@ To build all the versions (PDF and HTML), type `make`.
 
 In order to build the PDF versions of this CV, you will need:
 
-   * A LaTeX distribution (TeXLive 2012 recommended);
+   * A LaTeX distribution (TeXLive recommended);
    * LuaTeX;
    * MinionPro and MyriadPro fonts (you can find them with Acrobat Reader).
 
@@ -30,12 +30,4 @@ The HTML version of this CV is generated from the PDF version, using [pdf2htmlex
 ## Using octicons
 
 In order to use the Octicons font, you will need to install this font. You can find it here: https://github.com/geniusgithub/github-android/raw/master/assets/octicons-regular-webfont.ttf
-
-# About the `gh-pages` branch
-
-This project has a `gh-pages` branch hosting the http://cv.raphink.info.
-
-The `gh-pages` branch contains a simple static HTML page and the HTML CV files generated from `pdf2htmlex`.
-
-The `index.html` page also allows to download the PDF CV files stored in the `master` branch.
 

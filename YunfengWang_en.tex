@@ -1,0 +1,142 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% Version: 20110122-4
+
+
+\documentclass[11pt,a4paper,nolmodern]{moderncv}
+
+\usepackage{YunfengWang}
+
+\usepackage[english]{babel}
+\linespread{0.9}
+% for some reason, lines take up a lot of space in itemize in English...
+\newenvironment{tightitemize}
+   {\begin{itemize}
+   \setlength{\parskip}{0pt}}
+   {\end{itemize}}
+
+
+% personal data
+\title{Master Student}
+\extrainfo{%
+%\linkedin~\httplink{www.linkedin.com/in/raphink}\\%
+\octocat~\httplink{www.github.com/vra}\\%
+%Driving License
+} % optional, remove the line if not wanted
+
+\myquote{Life is a process of learning.}{}
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\setmainfont{Minion Pro}
+\setsansfont{Myriad Pro}
+
+\hyphenpenalty=10000
+\maketitle
+
+\section{Skills}
+
+%\subsection{Expert Skills}
+%\cvcomputer{Configuration Management}{Puppet\contributor, MCollective\contributor, Augeas\developer}
+%           {Debian OSes}{Debian\contributor, Ubuntu\developer}
+
+\subsection{Development}
+\cvcomputer{Languages}{C/C++, Python, Shell/Bash, GNU Make}
+           {Web}{HTML, CSS, JavaScript, Ajax, Jquery, Bootstrap, Chrome extension}
+\cvcomputer{Frameworks}{Django, Flask}
+           {Databases}{MySQL}
+\cvcomputer{Formats}{XML, YAML/JSON, Prototxt}
+           {Methods}{Object Oriented Programming, MVC, UML}
+\cvcomputer{Source Management}{Git}
+           {Tools}{Caffe, Cmake, GitHub, GitLab, Vim, Tmux}
+
+%\subsection{Office and tools}
+%\cvcomputer{Office}{OpenOffice/LibreOffice, Microsoft Office}
+%\cvcomputer{Edition}{\TeX{}, \LaTeX{}}
+
+
+\section{Experience}
+{
+\setlength{\parskip}{-5pt}
+\subsection{Developing Experience}
+
+\tldatecventry{2016}{EasyDict}{Author}{A simple online dictionary, developed as a chrome extension}{}{%
+\begin{tightitemize}%
+ \item \href{https://github.com/vra/easy-dict}{Source code on github};
+ \item \href{https://chrome.google.com/webstore/detail/easydict/ejlckbajejjeoieicimfoijkcfloeded}{download link in chrome store};
+ \item \href{http://www.shanbay.com/help/developer/api_v1/}{Uses Shanbay API};
+ \item Contains chinese definition, english definition, UK audio and US audio. \\
+\end{tightitemize}}
+
+\tldatecventry{2015}{CaptchaLess}{co-author}{A chrome extension for autofilling captchas at USTC sites}{}{%
+\begin{tightitemize}%
+ \item \href{https://github.com/CaptchaLess}{Source code on github};
+ \item \href{https://chrome.google.com/webstore/detail/captchaless/claimmbgfkbkkjdibcghloeibcifnodn}{download link in chrome store};
+ \item capable for all sites in my university;
+ \item Accuracy of recognition reachs 99\%. \\
+\end{tightitemize}}
+
+\tldatecventry{2015}{GuoDongBa}{co-author}{An android application and a website for booking gyms.}{}{%
+\begin{tightitemize}%
+ \item This is a solution proposed for baidu startup summer camp, and we won the third prize award;
+ \item \href{http://guodongs.com/}{website of this project};
+ \item \href{https://github.com/Guo-Dong-Ba-Team}{Source code on github};
+ \item obtained 500 customers and more than 10 business. \\
+\end{tightitemize}}
+
+
+\tldatecventry{2013}{Open-Source Contribution}{Contribute code for serverl projects}{}{}{%
+\begin{tightitemize}%
+ \item \href{https://github.com/facebook/C3D/pull/36}{mergered pull request} to facebook/C3D;
+ \item \href{https://github.com/cs231n/cs231n.github.io/pull/72}{mergered pull request} to stanford online course cs231n;
+ \item \href{https://github.com/ruanyf/jstutorial/pull/62}{open pull request} to Javascript tutorial book by ruanyf; \\
+\end{tightitemize}}
+
+\setlength{\parskip}{-5pt}
+}
+\pagebreak
+
+\section{Education}
+{
+\setlength{\parskip}{-5pt}
+\tldatecventry{2015}{Master Student (recommended)}{\href{http://sist.ustc.edu.cn}{School of Information Science and Technology},~\href{http://www.ustc.edu.cn}{University of Science and Technology of China}}{Information and Communication Engineering}{}{}
+\tldatecventry{2011}{Bachelor Student}{\href{http://sist.ustc.edu.cn}{School of Information Science and Technology}, ~\href{http://www.ustc.edu.cn}{University of Science and Technology of China}}{Electronic Science and Technology}{}{}
+
+\setlength{\parskip}{-5pt}
+}
+
+\section{Foreign Languages}
+{
+\setlength{\parskip}{-5pt}
+\cvlanguage{English}{Fluent}{Daily practice, conferences given in English, CET-6 passed}
+\setlength{\parskip}{-5pt}
+}
+
+\section{Awards}
+{
+\setlength{\parskip}{-5pt}
+
+\tldatelabelcventry{2015}{2015.05}{Gold Award}{Study scholarships in USTC}{}{}{}
+\tldatelabelcventry{2014}{2014.05}{Silver Awards}{Study scholarships in USTC}{}{}{}
+\tldatelabelcventry{2013}{2013.05}{Bronze Awards}{Study scholarships in USTC}{}{}{}
+\tldatelabelcventry{2011}{2011.10}{Outstanding Alumni Award}{}{}{}{}
+
+\setlength{\parskip}{-5pt}
+}
+
+\section{Personal interests}
+
+\cvhobby{Sports}{Hiking, cycling, climbing}
+\cvhobby{Memberships}{Member of the volunteer association in my university}
+
+\end{document}
+
